@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body {
+    
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, 
+li,
+ a {
+     margin: 0;
+     padding: 0;
+ }
+
+ span {
+     display: block;
+     padding: 0;
+     margin: 0;
+ }
+
+ .container__fluid{
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  button {
+       background-color: red;
+
+  }
+

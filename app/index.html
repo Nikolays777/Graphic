@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <section class="graph">
+      <div class="container-fluid">
+        <div class="graph__inner">
+          <aside class="graph__aside aside">
+            <div class="aside__logo">
+              <a class="logo" href="#">
+                <img src="images/logo.svg" alt="" />
+              </a>
+            </div>
+            <nav class="aside__menu">
+              <ul class="menu">
+                <li class="menu__item">
+                  <a href="#" class="menu__link active">Revenues</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Gross Profit MMAs</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Total Web Sessions</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Web Sales</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">AVG ORDER SIZES</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">NEW CUSTOMER SALES ORD...</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">SALES ORDERS COUNTS</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">TOTAL WEB SESSIONS</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">VISITOR WEB SESSIONS</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">WEB FORMS SUBMISSIONS</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="aside__features">
+              <a href="#" class="aside__features-link">
+                SETTINGS <img src="images/gear.svg" alt="" />
+              </a>
+              <a href="#" class="aside__features-link">
+                LOG OUT <img src="images/arrow-right.svg" alt="" />
+              </a>
+            </div>
+          </aside>
+          <div class="graph__box content">
+
+            <div class="content__inner">
+              <button class="content__btn" type="button">
+                Filters <span></span>
+              </button>
+              <div class="content__filter filter ">
+                <div class="filter__num">
+                  <div class="filter__num-item active">2018</div>
+                  <div class="filter__num-item">2019</div>
+                  <div class="filter__num-item">2020</div>
+                </div>
+                <form class="filter__change">
+                  <div class="filter__change-check">
+                    <label for="item-1">
+                      <input id="item-1" type="checkbox" />Q1
+                    </label>
+
+                    <label for="item-2">
+                      <input id="item-2" type="checkbox" />Q2
+                    </label>
+
+                    <label for="item-3">
+                      <input id="item-3" type="checkbox" />Q3
+                    </label>
+
+                    <label for="item-4">
+                      <input id="item-4" type="checkbox" />Q4
+                    </label>
+                  </div>
+                  <div class="filter__change-buttons">
+                    <button class="filter__change-btn active" type="button">
+                        show
+                    </button>
+                    <button class="filter__change-btn" type="button">
+                        compare
+                    </button>
+                    <button class="filter__change-btn" type="button">
+                        month to date
+                    </button>
+                    <button class="filter__change-btn" type="button">
+                        years to date
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="content__box">
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+        
+    </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
