@@ -10,8 +10,8 @@ $(function () {
         $(this).toggleClass('active');
     });
 
-    $('.menu__link').on('click', function() {
-        $('.menu__link').removeClass('active');         
+    $('.menu__item').on('click', function() {
+        $('.menu__item').removeClass('active');         
         $(this).toggleClass('active');
     });
 

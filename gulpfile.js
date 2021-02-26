@@ -26,8 +26,8 @@ gulp.task('style', function() {
         'node_modules/magnific-popup/dist/magnific-popup.css',
         'node_modules/chartist/dist/chartist.css',
         'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
-        'node_modules/chart.js/dist/Chart.css'
-        // 'node_modules/bootstrap/dist/css/bootstrap.css'
+        'node_modules/chart.js/dist/Chart.css',
+        'node_modules/bootstrap/dist/css/bootstrap.css'
     ])
     .pipe(concat('libs.min.css'))// объединяем файлы js полученные выше
     .pipe(cssmin())
@@ -40,8 +40,8 @@ gulp.task('script', function() {
         'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
         'node_modules/chartist/dist/chartist.js',
         'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
-        'node_modules/chart.js/dist/Chart.js'
-        // 'node_modules/bootstrap/dist/js/bootstrap.js'
+        'node_modules/chart.js/dist/Chart.js',
+        'node_modules/bootstrap/dist/js/bootstrap.js'
     ])
     .pipe(concat('libs.min.js'))// объединяем файлы js полученные выше
     .pipe(uglify()) //Минифицируем js файлы

@@ -1,19 +1,17 @@
 @import "global";
 
 .graph {
-    &__inner {
-        display: flex;
-        min-height: 100vh;
-    }
+    height: 100vh;
 }
 
 .aside {
+    margin-left: -15px;
     padding: 20px 0 34px 40px;
     background-color: #2F80ED;
     position: relative;
-    max-width: 325px;
-    width: 100%;
-
+    width: 325px;
+    height: 100vh;
+    position: fixed;
     &__logo {
         padding-bottom: 14px;
         border-bottom: 2px solid #fff;
@@ -42,6 +40,11 @@
     color: #fff;
     font-size: 14px;
     color: rgba(255, 255, 255, .5);
+    &:hover {
+        font-size: 14px;
+        color: rgba(255, 255, 255, .5);
+        text-decoration: none;
+    }
     img {
         position: absolute;
         right: 0;
@@ -52,16 +55,26 @@
     &__link {
         color: rgba(255, 255, 255, .5);
         font-size: 14px;
+        &:hover {
+            color: rgba(255, 255, 255, .5);
+            text-decoration: none;
+        }
+
+    }
+    &__item {
         &.active {
-            position: relative;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 700;
-            &::before {
-                content: url('../images/selecter.svg');
-                position: absolute;
-                right: -37px;
-                top: -50%;
+            a{
+                position: relative;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 700;
+                &::before {
+                    content: url('../images/selecter.svg');
+                    position: absolute;
+                    right: -37px;
+                    top: -50%;
+                }
+
             }
         }
     }
@@ -80,7 +93,7 @@
         border-radius: 52px;
         background-color: transparent;
         cursor: pointer;
-        padding: 12px 29px 12px 53px;
+        padding: 10px 29px 10px 53px;
         outline: none;
         color: #2F80ED;
         font-weight: 700;
@@ -122,19 +135,6 @@
                 background-color: #fff;
                 bottom: -1px;
                 left: 0;
-            }
-            &::after {
-                content: '';
-                position: absolute;
-                width: 14px;
-                height: 14px;
-                border: 1px solid #E5E5E5;
-                border-radius: 15px 100px 15px 150px;
-                border-top-right-radius: 0;
-                border-right: 0;
-                border-top: 0;
-                right: -14px;
-                bottom: -1px;
             }
             span {
                 &::after {
